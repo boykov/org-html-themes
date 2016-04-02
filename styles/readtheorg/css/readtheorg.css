@@ -47,6 +47,33 @@ html{
     height:100%;
     /* overflow-x:hidden; */
 }
+
+body.noscroll
+{
+    /* overflow-y: hidden; */
+    /* height:100%; */
+    /* position:fixed; */
+    /* overflow-y:hidden; */
+    /* left:300px; */
+}
+
+html.noscroll
+{
+    /* height:100%; */
+    /* position:fixed; */
+    /* overflow-y:hidden; */
+    /* overflow-x:hidden; */
+    /* margin-left:300px; */
+}
+
+content.noscroll
+{
+    /* margin-left:300px; */
+    /* left:300px; */
+}
+
+table-of-contents.noscroll
+{
 }
 
 body{
@@ -219,10 +246,61 @@ dl dd{
         margin: 0px;}
 }
 
+@media print {
+    .dontprint {
+        display: none;
+    }
+}
+
+#menu {
+    background: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    top: 10px;                          /* together with this to put the div at the top */
+    color: #333333;
+    cursor: pointer;
+    font-family: verdana;
+    font-size: 11px;
+    padding: 5px;
+    position: fixed;                    /* this is the magic */
+    left: 20px;
+    text-align: center;
+    width: 60px;
+    z-index: 999;
+}
+
+#menu:hover {
+    text-decoration: underline;
+}
+
+#toTop {
+    background: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    top: 10px;                          /* together with this to put the div at the top */
+    color: #333333;
+    cursor: pointer;
+    display: none;
+    font-family: verdana;
+    font-size: 11px;
+    padding: 5px;
+    position: fixed;                    /* this is the magic */
+    right: 10px;
+    text-align: center;
+    width: 100px;
+    z-index: 999;
+}
+
+#toTop:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 768px){
+    #table-of-contents{
+        display:none}
 }
 
 @media only screen and (max-width: 480px){
+    #table-of-contents{
+        display:none}
 }
 
 @media screen and (max-width: 768px){
