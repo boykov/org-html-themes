@@ -70,14 +70,6 @@ $( document ).ready(function() {
                                         // a Bootstrap nav component.
     $('body').scrollspy({target: '#text-table-of-contents'});
 
-    // add sticky table headers
-    $('table').stickyTableHeaders();
-
-    var $postamble = $('#postamble');
-    var $tableOfContents = $('#table-of-contents');
-    // set the height of tableOfContents
-    $tableOfContents.height($tableOfContents.height() - $postamble.outerHeight());
-
 });
 
 window.SphinxRtdTheme = (function (jquery) {
