@@ -17,7 +17,12 @@ $(function() {
 
 function toggleTOC() {
     var lTable = document.getElementById("table-of-contents");
-    lTable.style.display = (lTable.style.display == "block") ? "none" : "block";
+    var style = window.getComputedStyle(lTable);
+    if (style.getPropertyValue("display")=="block") {
+	lTable.style.display = (lTable.style.display == "none") ? "block" : "none";
+    } else {
+	lTable.style.display = (lTable.style.display == "block") ? "none" : "block";
+    }
     if (lTable.style.display == "block") {
 	$('html, body, content').addClass('noscroll');
     } else{
