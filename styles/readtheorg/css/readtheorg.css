@@ -244,27 +244,6 @@ dl dd{
     text-decoration: underline;
 }
 
-#toTop {
-    background: #F7F7F7;
-    border: 1px solid #CCCCCC;
-    top: 10px;                          /* together with this to put the div at the top */
-    color: #333333;
-    cursor: pointer;
-    display: none;
-    font-family: verdana;
-    font-size: 11px;
-    padding: 5px;
-    position: fixed;                    /* this is the magic */
-    right: 10px;
-    text-align: center;
-    width: 100px;
-    z-index: 999;
-}
-
-#toTop:hover {
-    text-decoration: underline;
-}
-
 @media screen and (max-width: 768px){
     #table-of-contents{
         display:none}

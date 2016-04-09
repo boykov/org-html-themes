@@ -1,20 +1,3 @@
-$(function() {
-    $('<div id="toTop" class="dontprint"><span>^ Back to Top</span></div>').appendTo('body');
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() != 0) {
-	    $('#toTop').fadeIn();
-        } else {
-	    $('#toTop').fadeOut();
-        }
-    });
-
-    $('#toTop').click(function(e) {
-        $('html, body').animate({scrollTop: 0}, 800);
-        e.preventDefault();                   // Disable default browser behavior
-    });
-});
-
 function toggleTOC() {
     var lTable = document.getElementById("table-of-contents");
     var style = window.getComputedStyle(lTable);
