@@ -18,11 +18,8 @@ $(function() {
 function toggleTOC() {
     var lTable = document.getElementById("table-of-contents");
     var style = window.getComputedStyle(lTable);
-    if (style.getPropertyValue("display")=="block") {
-	lTable.style.display = (lTable.style.display == "none") ? "block" : "none";
-    } else {
-	lTable.style.display = (lTable.style.display == "block") ? "none" : "block";
-    }
+    lTable.style.display = style.getPropertyValue("display")
+    lTable.style.display = (lTable.style.display == "none") ? "block" : "none";
     if (lTable.style.display == "block") {
 	$('html, body, content').addClass('noscroll');
     } else{
