@@ -48,34 +48,6 @@ html{
     /* overflow-x:hidden; */
 }
 
-body.noscroll
-{
-    /* overflow-y: hidden; */
-    /* height:100%; */
-    /* position:fixed; */
-    /* overflow-y:hidden; */
-    /* left:300px; */
-}
-
-html.noscroll
-{
-    /* height:100%; */
-    /* position:fixed; */
-    /* overflow-y:hidden; */
-    /* overflow-x:hidden; */
-    /* margin-left:300px; */
-}
-
-content.noscroll
-{
-    /* margin-left:300px; */
-    /* left:300px; */
-}
-
-table-of-contents.noscroll
-{
-}
-
 body{
     background:#edf0f2;
     color:#404040;

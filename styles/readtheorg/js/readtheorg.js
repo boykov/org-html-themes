@@ -20,11 +20,6 @@ function toggleTOC() {
     var style = window.getComputedStyle(lTable);
     lTable.style.display = style.getPropertyValue("display")
     lTable.style.display = (lTable.style.display == "none") ? "block" : "none";
-    if (lTable.style.display == "block") {
-	$('html, body, content').addClass('noscroll');
-    } else{
-	$('html, body, content').removeClass('noscroll');
-    }
 }
 
 $(function() {
