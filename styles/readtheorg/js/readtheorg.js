@@ -6,7 +6,7 @@ function toggleTOC() {
 }
 
 $(function() {
-    $('<div id="menu" class="dontprint"><span>^ Menu</span></div>').appendTo('body');
+    $('<div id="menu" class="fa fa-bars dontprint"></div>').appendTo('body');
     $('#menu').click(function(e) {
 	toggleTOC();
     });
