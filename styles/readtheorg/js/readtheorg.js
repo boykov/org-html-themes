@@ -1,3 +1,9 @@
+function toggleDiv(divId) {
+
+    $("#"+divId).toggle();
+
+}
+
 function toggleTOC() {
     var lTable = document.getElementById("table-of-contents");
     var style = window.getComputedStyle(lTable);
