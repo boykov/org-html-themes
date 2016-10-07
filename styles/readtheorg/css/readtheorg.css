@@ -230,7 +230,7 @@ dl dd{
 }
 
 #menu {
-    top: 2px;                          /* together with this to put the div at the top */
+    top: 4px;                          /* together with this to put the div at the top */
     color: #333333;
     cursor: pointer;
     font-family: verdana;
