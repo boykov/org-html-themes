@@ -211,6 +211,9 @@ dl dd{
     #table-of-contents{
         display:none}
 
+    #menu{
+	display:none}
+
     @page{
         size: auto;
         margin: 25mm 25mm 25mm 25mm;}
