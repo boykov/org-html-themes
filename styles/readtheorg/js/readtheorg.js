@@ -4,6 +4,13 @@ function toggleDiv(divId) {
 
 }
 
+function toggleDiv2(divId, x) {
+
+    x.toggleClass('fa-caret-right fa-caret-down');
+    $("#"+divId).toggle();
+
+}
+
 function toggleTOC() {
     var lTable = document.getElementById("table-of-contents");
     var style = window.getComputedStyle(lTable);
