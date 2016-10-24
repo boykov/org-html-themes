@@ -11,7 +11,7 @@ function toggleDiv2(divId, x) {
 
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = "#" + divId + " .src " + " { height: 300px;overflow-y: auto; }";
+    css.innerHTML = "#" + divId + " .src " + " { max-height: 300px;overflow-y: auto; }";
     document.body.appendChild(css);
 
 }
