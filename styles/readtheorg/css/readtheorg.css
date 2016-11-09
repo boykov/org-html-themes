@@ -109,6 +109,10 @@ dd{
     line-height:24px;
     margin-bottom:24px}
 
+ul ul{
+    margin-bottom:0;
+}
+
 #content .section ul li,#content .toctree-wrapper ul li,article ul li{
     list-style:disc;
     margin-left:24px}
