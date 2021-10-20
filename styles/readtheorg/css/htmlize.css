@@ -111,6 +111,7 @@
 .org-org-upcoming-deadline { /* org-upcoming-deadline */ color: #b22222; }
 .org-org-verbatim { /* org-verbatim */ color: #7f7f7f; }
 .org-org-verse { /* org-verse */ color: #7f7f7f; }
+.org-org-abstract { /* org-abstract */ color: #7f7f7f; }
 .org-org-warning { /* org-warning */ color: #ff0000; font-weight: bold; }
 .org-outline-1 { /* outline-1 */ color: #0000ff; }
 .org-outline-2 { /* outline-2 */ color: #a0522d; }

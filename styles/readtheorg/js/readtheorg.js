@@ -33,6 +33,7 @@ $(function() {
 $(function() {
     $('.note').before("<p class='admonition-title note'>Note</p>");
     $('.seealso').before("<p class='admonition-title seealso'>See also</p>");
+    $('.showhide').wrap("<details></details>").before("<summary>Show/Hide</summary>");
     $('.warning').before("<p class='admonition-title warning'>Warning</p>");
     $('.caution').before("<p class='admonition-title caution'>Caution</p>");
     $('.attention').before("<p class='admonition-title attention'>Attention</p>");

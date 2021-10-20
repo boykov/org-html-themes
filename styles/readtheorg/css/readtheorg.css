@@ -809,7 +809,7 @@ hr{
     left:0;
     width:300px;
     overflow-x:hidden;
-    overflow-y:scroll;
+    overflow-y:hidden;
     height:100%;
     background:#343131;
     z-index:200;
@@ -966,6 +966,10 @@ footer p{
     background-color: #E7F2FA;
     padding: 6px 20px;
     font-style:italic;
+}
+
+.abstract{
+    background-color: #F0F0F0;
 }
 
 #content .note .last,#content .attention .last,#content .caution .last,#content .danger .last,#content .error .last,#content .hint .last,#content .important .last,#content .tip .last,#content .warning .last,#content .seealso .last,#content .admonitiontodo .last{
