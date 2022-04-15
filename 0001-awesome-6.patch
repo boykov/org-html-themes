@@ -1,0 +1,140 @@
+diff --git a/styles/readtheorg/css/readtheorg.css b/styles/readtheorg/css/readtheorg.css
+index ba6e0d6..ca45016 100644
+--- a/styles/readtheorg/css/readtheorg.css
++++ b/styles/readtheorg/css/readtheorg.css
+@@ -1,6 +1,6 @@
+ 
+ @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700);
+-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
++@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
+ 
+ h1,h2,h3,h4,h5,h6,legend{
+     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
+@@ -233,7 +233,30 @@ dl dd{
+ }
+ 
+ .fa-bars:before {
+-    content: ""
++    content: "";
++    font-family:"Font Awesome 6 Free";
++}
++
++.fa-caret-right:before {
++    content: "";
++    font-family:"Font Awesome 6 Free";
++    font-weight:bold;
++}
++
++.fa-caret-down:before {
++    content: "";
++    font-family:"Font Awesome 6 Free";
++    font-weight:bold;
++}
++
++a.fa-caret-right {
++    font-family:verdana;
++    font-weight:normal;
++}
++
++a.fa-caret-down {
++    font-family:verdana;
++    font-weight:normal;
+ }
+ 
+ #menu {
+@@ -542,66 +565,6 @@ legend{
+     padding:0;
+     white-space:normal}
+ 
+-.fa:before,#content .admonition-title:before,#content h1 .headerlink:before,#content h2 .headerlink:before,#content h3 .headerlink:before,#content h4 .headerlink:before,#content h5 .headerlink:before,#content h6 .headerlink:before,#content dl dt .headerlink:before,.icon:before,.wy-dropdown .caret:before,.wy-inline-validate.wy-inline-validate-success .wy-input-context:before,.wy-inline-validate.wy-inline-validate-danger .wy-input-context:before,.wy-inline-validate.wy-inline-validate-warning .wy-input-context:before,.wy-inline-validate.wy-inline-validate-info .wy-input-context:before,.wy-alert,#content .note,#content .attention,#content .caution,#content .danger,#content .error,#content .hint,#content .important,#content .tip,#content .warning,#content .seealso,#content .admonitiontodo,.btn,input[type="text"],input[type="password"],input[type="email"],input[type="url"],input[type="date"],input[type="month"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="week"],input[type="number"],input[type="search"],input[type="tel"],input[type="color"],select,textarea,#table-of-contents li.on a,#table-of-contents li.current>a,.wy-side-nav-search>a,.wy-side-nav-search .wy-dropdown>a,.wy-nav-top a{
+-    -webkit-font-smoothing:antialiased}
+-
+-/*!
+- *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
+- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+- */@font-face{
+-    font-family:'FontAwesome';
+-    src:url("../fonts/fontawesome-webfont.eot?v=4.1.0");
+-    src:url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"),url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"),url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"),url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
+-    font-weight:normal;
+-    font-style:normal}
+-
+-.fa,#content .admonition-title,.icon{
+-    display:inline-block;
+-    font-family:FontAwesome;
+-    font-style:normal;
+-    font-weight:normal;
+-    line-height:1;
+-    -webkit-font-smoothing:antialiased;
+-    -moz-osx-font-smoothing:grayscale}
+-
+-.fa-ul{
+-    padding-left:0;
+-    margin-left:2.14286em;
+-    list-style-type:none}
+-
+-.fa-ul>li{
+-    position:relative}
+-
+-.fa-li{
+-    position:absolute;
+-    left:-2.14286em;
+-    width:2.14286em;
+-    top:0.14286em;
+-    text-align:center}
+-
+-.fa-li.fa-lg{
+-    left:-1.85714em}
+-
+-.fa-border{
+-    padding:.2em .25em .15em;
+-    border:solid 0.08em #eee;
+-    border-radius:.1em}
+-
+-.fa,#content .admonition-title{
+-    font-family:inherit}
+-
+-.fa:before,#content .admonition-title:before{
+-    font-family:"FontAwesome";
+-    display:inline-block;
+-    font-style:normal;
+-    font-weight:normal;
+-    line-height:1;
+-    text-decoration:inherit}
+-
+-a .fa,a #content .admonition-title,#content a .admonition-title{
+-    display:inline-block;
+-    text-decoration:inherit}
+-
+ .nav #content .admonition-title,#content .nav .admonition-title,.nav .icon{
+     display:inline}
+ 
+@@ -628,15 +591,6 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
+ .wy-alert.wy-alert-warning,#content .wy-alert-warning.note,#content .attention,#content .caution,#content .wy-alert-warning.danger,#content .wy-alert-warning.error,#content .wy-alert-warning.hint,#content .wy-alert-warning.important,#content .wy-alert-warning.tip,#content .warning,#content .wy-alert-warning.seealso,#content .admonitiontodo{
+     background:#ffedcc}
+ 
+-#content .admonition-title.note:before, #content .admonition-title.seealso:before,
+-#content .admonition-title.warning:before, #content .admonition-title.caution:before,
+-#content .admonition-title.attention:before,
+-#content .admonition-title.tip:before, #content .admonition-title.hint:before,
+-#content .admonition-title.important:before,
+-#content .admonition-title.error:before, #content .admonition-title.danger:before{
+-    font-family:FontAwesome;
+-    content: "";}
+-
+ #content .note,#content .seealso{
+     background:#e7f2fa}
+ 
+@@ -986,12 +940,6 @@ footer p{
+     visibility:hidden;
+     font-size:14px}
+ 
+-#content h1 .headerlink:after,#content h2 .headerlink:after,#content h3 .headerlink:after,#content h4 .headerlink:after,#content h5 .headerlink:after,#content h6 .headerlink:after,#content dl dt .headerlink:after{
+-    visibility:visible;
+-    content:"";
+-    font-family:FontAwesome;
+-    display:inline-block}
+-
+ #content h1:hover .headerlink,#content h2:hover .headerlink,#content h3:hover .headerlink,#content h4:hover .headerlink,#content h5:hover .headerlink,#content h6:hover .headerlink,#content dl dt:hover .headerlink{
+     display:inline-block}
+ 

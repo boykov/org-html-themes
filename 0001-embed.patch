@@ -1,0 +1,73 @@
+diff --git a/styles/readtheorg/css/readtheorg.css b/styles/readtheorg/css/readtheorg.css
+index 12f4fa1..b2250b5 100644
+--- a/styles/readtheorg/css/readtheorg.css
++++ b/styles/readtheorg/css/readtheorg.css
+@@ -196,6 +196,9 @@ dl dd{
+     img{
+         max-width:100% !important}
+ 
++    /* embed{ */
++    /*     max-width:100% !important} */
++
+     @page{
+         margin:0.5cm}
+ 
+@@ -242,6 +245,28 @@ dl dd{
+     font-family:"Font Awesome 6 Free";
+ }
+ 
++/* .fa-caret-right:before { */
++/*     content: ""; */
++/*     font-family:"Font Awesome 6 Free"; */
++/*     font-weight:bold; */
++/* } */
++
++/* .fa-caret-down:before { */
++/*     content: ""; */
++/*     font-family:"Font Awesome 6 Free"; */
++/*     font-weight:bold; */
++/* } */
++
++/* a.fa-caret-right { */
++/*     font-family:verdana; */
++/*     font-weight:normal; */
++/* } */
++
++/* a.fa-caret-down { */
++/*     font-family:verdana; */
++/*     font-weight:normal; */
++/* } */
++
+ #menu {
+     top: 4px;                          /* together with this to put the div at the top */
+     color: #333333;
+@@ -314,6 +339,9 @@ dl dd{
+     img{
+         width:100%;
+         height:auto}
++    /* embed{ */
++    /*     width:100%; */
++    /*     height:auto} */
+ }
+ 
+ @media screen and (max-width: 480px){
+@@ -533,6 +561,11 @@ img{
+     vertical-align:middle;
+     max-width:100%}
+ 
++/* embed{ */
++/*     -ms-interpolation-mode:bicubic; */
++/*     vertical-align:middle; */
++/*     max-width:100%} */
++
+ svg text {
+     font-family:"Font Awesome 6 Free";
+ }
+@@ -585,6 +618,7 @@ legend{
+ a .fa,a #content .admonition-title,#content a .admonition-title{
+     display:inline-block;
+     text-decoration:inherit}
++/* TODO check here if it will break later */
+ 
+ .nav #content .admonition-title,#content .nav .admonition-title,.nav .icon{
+     display:inline}
