@@ -374,6 +374,10 @@ pre.src{
     white-space:pre;
 }
 
+pre.src:before {
+  top: -5px;
+}
+
 .example{
     background:#f3f6f6;
     border:1px solid #e1e4e5;

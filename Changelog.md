@@ -1,5 +1,10 @@
 # Changelog
 
+### 0.0.3
+
+Add `pre.src` src block language position.
+Add `html-css-js` iframe example.
+
 ### 0.0.2
 
 Add local `styles/lib/webfonts/` and `styles/lib/css/`.
