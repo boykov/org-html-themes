@@ -29,6 +29,7 @@ $(function() {
     $('.hint').before("<p class='admonition-title hint'>Hint</p>");
     $('.error').before("<p class='admonition-title error'>Error</p>");
     $('.danger').before("<p class='admonition-title danger'>Danger</p>");
+    $('.showhide').wrap("<details></details>").before("<summary>Show/Hide</summary>");
 });
 
 $( document ).ready(function() {
