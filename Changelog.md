@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.0.5
+
+Fix `blockquote p`.
+Add `org-html-style-default.css`.
+Fix indentation.
+Init `html-css-js`, `search-collapsed-content`.
+
 ### 0.0.4
 
 Combine old and new versions.

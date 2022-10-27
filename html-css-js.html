@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script> <!-- Load jQuery -->
+    <style>
+      .tiptext {
+      color:#069; 
+      cursor:pointer;
+      }
+      .description {
+      display:none;
+      position:absolute;
+      border:1px solid #000;
+      width:400px;
+      height:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="tiptext">A link
+      <iframe class="description" src="https://portal.homew.keenetic.pro/org/clock/skills-read-self.html"></iframe>
+    </a>
+  </body>
+  <script>
+    $(".tiptext").mouseover(function() {
+    $(this).children(".description").show();
+    }).mouseout(function() {
+    $(this).children(".description").hide();
+    });
+  </script>
+</html>

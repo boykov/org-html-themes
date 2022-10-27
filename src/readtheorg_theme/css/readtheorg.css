@@ -3,6 +3,7 @@
 /* @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css); */
 /* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css); */
 
+@import url(../../lib/css/org-html-style-default.css);
 @import url(../../lib/css/fonts.googleapis.css);
 @import url(../../lib/css/all.min.css);
 
@@ -92,6 +93,11 @@ blockquote{
     margin:0px 0px 24px 0px;
     /* margin-left:24px; */
     padding: 6px 20px;
+
+}
+
+blockquote p {
+    display: inline;
 }
 
 ul,ol,dl{
@@ -125,7 +131,7 @@ ul ul{
     margin-left:24px}
 
 #content .section ul li p:last-child,#content .toctree-wrapper ul li p:last-child,article ul li p:last-child{
-                                                                                                                                  margin-bottom:0}
+    margin-bottom:0}
 
 #content .section ul li ul,#content .toctree-wrapper ul li ul,article ul li ul{
     margin-bottom:0}
@@ -149,7 +155,7 @@ ul ul{
     margin-left:24px}
 
 #content .section ol li p:last-child,#content ol li p:last-child,article ol li p:last-child{
-                                                                                                                           margin-bottom:0}
+    margin-bottom:0}
 
 #content .section ol li ul,#content ol li ul,article ol li ul{
     margin-bottom:0}
