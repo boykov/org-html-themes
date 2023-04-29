@@ -17,45 +17,49 @@
 	    margin: 0;
 	}
 	.panel .header:before {
-	    content: '🔽 ';
+	    content: "\25BE  ";
+	    background: white;
+	    color: black;
 	}
 	.panel.collapsed .header:before {
-	    content: '▶️ ';
+	    content: "\25B8  ";
+	    background: white;
+	    color: black;
 	}
 	.panel.collapsed .content {
 	    height: 0px;
-	    padding-top: 18px;
+	    padding-top: 0px;
 	    overflow-y: scroll;
 	    width: 100%;
-	    padding-right: 17px;
+	    padding-right: 0px;
 	    background-color: white;
 	}
       </style>
   </head>
   <body>
     <div class="column">
-      <div class="panel">
-	<h3 class="header" onclick="toggle(this)">Show/Hide</h3>
+      <div class="panel collapsed">
+	<div class="header" onclick="toggle(this)">Show/Hide</div>
 	<div class="content">
           Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”
 	</div>
       </div>
-      <div class="panel">
-	<h3 class="header" onclick="toggle(this)">Show/Hide</h3>
+      <div class="panel collapsed">
+	<div class="header" onclick="toggle(this)">Show/Hide</div>
 	<div class="content">
           The early universe, lasting around 377,000 years. Initially, various kinds of subatomic particles are formed in stages. These particles include almost equal amounts of matter and antimatter, so most of it quickly annihilates, leaving a small excess of matter in the universe.
 	</div>
       </div>
     </div>
     <div class="column">
-      <div class="panel column">
-	<h3 class="header" onclick="toggle(this)">Show/Hide</h3>
+      <div class="panel collapsed column">
+	<div class="header" onclick="toggle(this)">Show/Hide</div>
 	<div class="content">
           The actual term 'algorithm' is often cited as originated from the 9th Century Persian mathematician Abu Abdullah Muhammad ibn Musa Al-Khwarizmi. Wow, that's quite a name but he's also known as "the father of Algebra". In fact, Al-Khwarizmi built on the work of Brahmagupta.
 	</div>
       </div>
-      <div class="panel column">
-	<h3 class="header" onclick="toggle(this)">Show/Hide</h3>
+      <div class="panel collapsed column">
+	<div class="header" onclick="toggle(this)">Show/Hide</div>
 	<div class="content">
           Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.
 	</div>

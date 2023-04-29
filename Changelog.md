@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.0.6
+
+Add fa bash, ansible svg.
+Update `search-collapsed-content` example.
+Disable `.note` (due to next.js bad behaviour, repeated 3 times).
+Add showhide/toggle to readtheorg (search text ability).
+
 ### 0.0.5
 
 Fix `blockquote p`.

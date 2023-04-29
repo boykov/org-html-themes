@@ -7,6 +7,26 @@
 @import url(../../lib/css/fonts.googleapis.css);
 @import url(../../lib/css/all.min.css);
 
+.fa-bash:before{
+    display: inline-block;
+    content: ' ';
+    background-image: url('./bash.svg');
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    background-position: center;
+}
+
+.fa-ansible:before{
+    display: inline-block;
+    content: ' ';
+    background-image: url('./ansible.svg');
+    background-size: cover;
+    height: 16px;
+    width: 13px;
+    background-position: center;
+}
+
 h1,h2,h3,h4,h5,h6,legend{
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
     font-weight:700;
@@ -988,6 +1008,30 @@ footer p{
 
 .abstract{
     background-color: #F0F0F0;
+}
+
+.showhide {
+    margin: 10px;
+    overflow: hidden;
+}
+
+.showhide .header:before {
+    content: "\25BE  ";
+    background: white;
+    color: black;
+}
+.showhide.collapsed .header:before {
+    content: "\25B8  ";
+    background: white;
+    color: black;
+}
+.showhide.collapsed .content {
+    height: 0px;
+    padding-top: 0px;
+    overflow-y: scroll;
+    width: 100%;
+    padding-right: 0px;
+    background-color: white;
 }
 
 #content .note .last,#content .attention .last,#content .caution .last,#content .danger .last,#content .error .last,#content .hint .last,#content .important .last,#content .tip .last,#content .warning .last,#content .seealso .last,#content .admonitiontodo .last{

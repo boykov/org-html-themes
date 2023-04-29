@@ -9,6 +9,11 @@ function collapse_toc_elements_on_click (nav_li_a){
     $(nav_li_a).parent().toggleClass("active");
 }
 
+function toggle(head) {
+    head.parentNode.classList.toggle('collapsed');
+    head.parentNode.getElementsByClassName('content')[0].scrollTop = 0;
+}
+
 $( document ).ready(function() {
     // When the document is loaded and ready, bind the
     // function `collapse_toc_elements_on_click' to the
@@ -19,7 +24,7 @@ $( document ).ready(function() {
 });
 
 $(function() {
-    $('.note').before("<p class='admonition-title note'>Note</p>");
+    // $('.note').before("<p class='admonition-title note'>Note</p>");
     $('.seealso').before("<p class='admonition-title seealso'>See also</p>");
     $('.warning').before("<p class='admonition-title warning'>Warning</p>");
     $('.caution').before("<p class='admonition-title caution'>Caution</p>");
@@ -29,7 +34,7 @@ $(function() {
     $('.hint').before("<p class='admonition-title hint'>Hint</p>");
     $('.error').before("<p class='admonition-title error'>Error</p>");
     $('.danger').before("<p class='admonition-title danger'>Danger</p>");
-    $('.showhide').wrap("<details></details>").before("<summary>Show/Hide</summary>");
+    $('.showhide').wrapInner("<div class='content'></div>").prepend("<div class='header' onclick='toggle(this)'>Show/Hide</div>");
 });
 
 $( document ).ready(function() {
