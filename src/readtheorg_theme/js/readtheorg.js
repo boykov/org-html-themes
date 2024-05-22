@@ -34,7 +34,15 @@ $(function() {
     $('.hint').before("<p class='admonition-title hint'>Hint</p>");
     $('.error').before("<p class='admonition-title error'>Error</p>");
     $('.danger').before("<p class='admonition-title danger'>Danger</p>");
-    $('.showhide').wrapInner("<div class='content'></div>").prepend("<div class='header' onclick='toggle(this)'>Show/Hide</div>");
+    $('.kb_hide').each(function() {
+        var first_line = $(this).parent()[0].firstChild.textContent;
+        $(this).parent()[0].firstChild.remove();
+        $(this).parent().wrapInner("<div class='showhide collapsed'></div>").find('div').wrapInner("<div class='content'></div>")
+            .prepend(`<div class='header' onclick='toggle(this)'>${first_line}</div>`);
+    });
+    $('.kb_show').each(function() {
+        $(this).parent().children().wrapAll("<div class='showhide'></div>");
+    });
 });
 
 $( document ).ready(function() {
@@ -71,12 +79,18 @@ $( document ).ready(function() {
     $tableOfContents.css({paddingBottom: $postamble.outerHeight()});
 
     // add TOC button
-    var toggleSidebar = $('<div id="toggle-sidebar"><a href="#table-of-contents"><h2>Table of Contents</h2></a></div>');
+    var toggleSidebar = $('<div id="toggle-sidebar"><a href="#table-of-contents"><h2>Menu</h2></a></div>');
     $('#content').prepend(toggleSidebar);
 
     // add close button when sidebar showed in mobile screen
-    var closeBtn = $('<a class="close-sidebar" href="#">Close</a>');
+    var closeBtn = $('<a class="close-sidebar fas fa-window-close" href="#"></a>');
     var tocTitle = $('#table-of-contents').find('h2');
+    tocTitle[0].textContent = "";
+    var upLink = $('#uplink').find('a')[0].href
+
+    var upBtn = $(`<a class="up-sidebar fas fa-home" href="${upLink}"></a>`);
+
+    tocTitle.append(upBtn);
     tocTitle.append(closeBtn);
 });
 

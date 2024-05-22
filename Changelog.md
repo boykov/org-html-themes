@@ -1,5 +1,15 @@
 # Changelog
 
+### 0.0.7
+
+Add `kb_hide`, `kb_show`.
+Add `up-sidebar`, `upBtn`.
+Move `first_line` inside onclick.
+Rm "Содержание".
+Switch `upLink` to `#uplink`.
+Don't use `.showhide` at all.
+Use transparent background for showhide symbols.
+
 ### 0.0.6
 
 Add fa bash, ansible svg.

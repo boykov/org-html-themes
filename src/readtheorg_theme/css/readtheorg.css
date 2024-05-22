@@ -454,6 +454,13 @@ table tr:nth-child(2n) td{
     display: none;
 }
 
+#table-of-contents .up-sidebar {
+    color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    margin: 0px 10px 0px 15px;
+    padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
     #table-of-contents {
         display: none;
@@ -498,7 +505,7 @@ table tr:nth-child(2n) td{
     #table-of-contents .close-sidebar {
        color: rgba(255, 255, 255, 0.3);
        display: inline-block;
-       margin: 0px 10px 0px 45px;
+       margin: 0px 10px 0px 15px;
        padding: 10px;
     }
 }
@@ -1011,18 +1018,17 @@ footer p{
 }
 
 .showhide {
-    margin: 10px;
     overflow: hidden;
 }
 
 .showhide .header:before {
     content: "\25BE  ";
-    background: white;
+    background: transparent;
     color: black;
 }
 .showhide.collapsed .header:before {
     content: "\25B8  ";
-    background: white;
+    background: transparent;
     color: black;
 }
 .showhide.collapsed .content {
