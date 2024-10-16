@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.0.8
+
+Add `kbd` tag.
+
 ### 0.0.7
 
 Add `kb_hide`, `kb_show`.
