@@ -37,7 +37,7 @@ $(function() {
     $('.kb_hide').each(function() {
         var first_line = $(this).parent()[0].firstChild.textContent;
         $(this).parent()[0].firstChild.remove();
-        $(this).parent().wrapInner("<div class='showhide collapsed'></div>").find('div').wrapInner("<div class='content'></div>")
+        $(this).parent().wrapInner("<div class='showhide collapsed'></div>").find('div').first().wrapInner("<div class='content'></div>")
             .prepend(`<div class='header' onclick='toggle(this)'>${first_line}</div>`);
     });
     $('.kb_show').each(function() {

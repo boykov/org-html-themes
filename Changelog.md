@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.0.9
+
+Fix `kb_hide` first div.
+
 ### 0.0.8
 
 Add `kbd` tag.
