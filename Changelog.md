@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.1.1
+
+Fix undefined tocTitle and tocTitle[0].
+
 ### 0.0.9
 
 Fix `kb_hide` first div.

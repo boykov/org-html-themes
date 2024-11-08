@@ -85,13 +85,13 @@ $( document ).ready(function() {
     // add close button when sidebar showed in mobile screen
     var closeBtn = $('<a class="close-sidebar fas fa-window-close" href="#"></a>');
     var tocTitle = $('#table-of-contents').find('h2');
-    tocTitle[0].textContent = "";
-    var upLink = $('#uplink').find('a')[0].href
-
-    var upBtn = $(`<a class="up-sidebar fas fa-home" href="${upLink}"></a>`);
-
-    tocTitle.append(upBtn);
-    tocTitle.append(closeBtn);
+    if ((typeof tocTitle !== 'undefined') && (typeof tocTitle[0] !== 'undefined')) {
+        tocTitle[0].textContent = "";
+        var upLink = $('#uplink').find('a')[0].href
+        var upBtn = $(`<a class="up-sidebar fas fa-home" href="${upLink}"></a>`);
+        tocTitle.append(upBtn);
+        tocTitle.append(closeBtn);
+    };
 });
 
 window.SphinxRtdTheme = (function (jquery) {
