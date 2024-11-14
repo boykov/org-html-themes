@@ -1,5 +1,10 @@
 # Changelog
 
+### 0.1.2
+
+Fix undefined `$('#uplink').find('a')[0]`.
+Add `.stat` class.
+
 ### 0.1.1
 
 Fix undefined tocTitle and tocTitle[0].

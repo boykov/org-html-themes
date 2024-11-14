@@ -87,10 +87,13 @@ $( document ).ready(function() {
     var tocTitle = $('#table-of-contents').find('h2');
     if ((typeof tocTitle !== 'undefined') && (typeof tocTitle[0] !== 'undefined')) {
         tocTitle[0].textContent = "";
-        var upLink = $('#uplink').find('a')[0].href
-        var upBtn = $(`<a class="up-sidebar fas fa-home" href="${upLink}"></a>`);
-        tocTitle.append(upBtn);
-        tocTitle.append(closeBtn);
+        var upLink0 = $('#uplink').find('a');
+        if ((typeof upLink0 !== 'undefined') && (typeof upLink0[0] !== 'undefined')) {
+            var upLink = $('#uplink').find('a')[0].href
+            var upBtn = $(`<a class="up-sidebar fas fa-home" href="${upLink}"></a>`);
+            tocTitle.append(upBtn);
+            tocTitle.append(closeBtn);
+        }
     };
 });
 
