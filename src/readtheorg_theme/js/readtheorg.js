@@ -43,6 +43,11 @@ $(function() {
     $('.kb_show').each(function() {
         $(this).parent().children().wrapAll("<div class='showhide'></div>");
     });
+    $(".tiptext").mouseover(function() {
+        $(this).children(".description").show();
+    }).mouseout(function() {
+        $(this).children(".description").hide();
+    });
 });
 
 $( document ).ready(function() {

@@ -7,6 +7,19 @@
 @import url(../../lib/css/fonts.googleapis.css);
 @import url(../../lib/css/all.min.css);
 
+.tiptext {
+    color:#069; 
+    cursor:pointer;
+}
+
+.description {
+    display:none;
+    position:absolute;
+    border:1px solid #000;
+    width:400px;
+    height:400px;
+}
+
 kbd {
   background-color: #eee;
   border-radius: 3px;
