@@ -35,10 +35,21 @@ $(function() {
     $('.error').before("<p class='admonition-title error'>Error</p>");
     $('.danger').before("<p class='admonition-title danger'>Danger</p>");
     $('.kb_hide').each(function() {
-        var first_line = $(this).parent()[0].firstChild.textContent;
-        $(this).parent()[0].firstChild.remove();
+        var first_item0 = $(this).parent()[0].childNodes[0];
+        var first_item = $(this).parent()[0].childNodes[0].textContent;
+        var second_item = $(this).parent()[0].childNodes[1].textContent;
+        var first_line;
+        var num;
+        zero_line = first_item == "" ? first_item0.outerHTML : "";
+        first_line = first_item == "" ? second_item : first_item;
+        num = first_item == "" ? 1 : 0;
+        first_item == "" ? $(this).parent()[0].childNodes[1].remove() : {} ;
+        $(this).parent()[0].childNodes[0].remove();
+        // tmp?.remove();
+        // .children(`:gt(${num})`)
+        // .prepend(`${zero_line}`).wrapInner("<span style='display: flex;'></span>")
         $(this).parent().wrapInner("<div class='showhide collapsed'></div>").find('div').first().wrapInner("<div class='content'></div>")
-            .prepend(`<div class='header' onclick='toggle(this)'>${first_line}</div>`);
+            .prepend(`<div class='header' onclick='toggle(this)'>${zero_line} ${first_line}</div>`);
     });
     $('.kb_show').each(function() {
         $(this).parent().children().wrapAll("<div class='showhide'></div>");

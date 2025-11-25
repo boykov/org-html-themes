@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4
+
+Init checkbox with showhide.
+
 ## 0.1.3
 
 Add `.tiptext`, `.description`.
