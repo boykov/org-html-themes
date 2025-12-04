@@ -54,6 +54,12 @@ $(function() {
     $('.kb_show').each(function() {
         $(this).parent().children().wrapAll("<div class='showhide'></div>");
     });
+    $('.kb_head').each(function() {
+        var tmp = $(this)[0].textContent;
+        // $(this).parent().parent().parent()[0].childNodes[1].textContent += " " + tmp;
+        // $(this).parent().parent().parent()[0].childNodes[1].append(`<div style='text-align: right;'>${tmp}</div>`);
+        $(this).parent().parent().parent()[0].childNodes[1].innerHTML += `<span style='float: right;'>${tmp}</span>`;
+    });
     $(".tiptext").mouseover(function() {
         $(this).children(".description").show();
     }).mouseout(function() {

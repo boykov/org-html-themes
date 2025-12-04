@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5
+
+Add `kb_head` item.
+Awesome Free -> Pro `6.1.1`.
+
 ## 0.1.4
 
 Init checkbox with showhide.
